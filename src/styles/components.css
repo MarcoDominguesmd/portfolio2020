@@ -1,0 +1,255 @@
+
+
+/* HOME */
+ #home{
+    display: flex;
+    margin-top: 3vh;
+    padding: 3em 0 5em;
+    border-bottom: solid 2px var(--border) ;
+
+}
+#homepic{
+    position: relative;
+    width: 60vw;
+    min-width: 200px;
+    height: 400px;
+    margin-top: 40px;
+    top: -10px;
+    background-image: url(../items/imgs/Marco.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+#hometext{
+    margin: 0px 50px 50px 0;
+    width: 100%;
+}
+
+#hometext h1{
+    font-size: 2.7em;
+}
+
+#hometext h4{
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 700px){
+    #hometext h1{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #hometext h1{
+        font-size: 1.6em;
+    }
+    #hometext h4{
+        font-size: .9em;
+    }
+    #homepic{
+        width: 50vw;
+        min-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #homepic{
+        display: none;
+    }
+}
+
+
+/* NAV */
+
+
+
+#barComponent h2{
+    font-family: "Roboto Slab";
+    font-size: large;
+}
+
+#menu{
+    padding-bottom: 2em;
+    margin-bottom: 2.5em;
+    border-bottom: solid 2px var(--border);
+}
+
+#menutitle{
+    padding: 0 .1em 1em;
+}
+
+.menuopt{
+    padding: .1em 0;
+    border-top: 1px solid var(--border);
+    font-size: .8em;
+    text-transform: uppercase;
+}
+.menuopt a{
+    display: block;
+    padding: 1.2em .7em;
+}
+.menuopt a:hover{
+    color: var(--blue);
+}
+
+
+
+/* Contact */
+
+#contact{
+    font-size: small;
+    padding-bottom: 8em;
+}
+
+#contact h2{
+    padding-bottom: 0;
+}
+
+#contact img{
+    position: relative;
+    top: 1em;
+    width: 8%;
+    float: left;
+    padding: 0 5px;
+}
+
+.contactdetails{
+    padding-top: 5px;
+    border-top: 1px solid var(--border);
+}
+
+#messageform{
+    margin-top: 3em;
+}
+#messageform input{
+    width: 90%
+}
+#messageform textarea{
+    width: 90%;
+}
+
+#messageform button{
+    cursor: pointer;
+}
+#messageform button:hover{
+    border: 1px solid var(--hfont);
+}
+
+#successMsg{
+    width: 87%;
+    padding: 1em;
+    background-color: var(--navbg);
+    border: 4px solid rgb(51, 255, 0);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.hide{
+    display: none;
+}
+.msg{
+    display: block;
+}
+
+#emaillink{
+    font-family: "Open Sans", sans-serif;
+    color: var(--pfont);
+}
+
+
+
+/* PROJECTS */
+
+#projects{
+    margin-top: 2em;
+    padding: 4em 0;
+    border-bottom: solid 2px var(--border);
+}
+
+#projects img{
+    width:100%;
+    transition: all var(--secs);
+    -webkit-transition: all var(--secs);
+    -moz-transition: all var(--secs);
+    -ms-transition: all var(--secs);
+    -o-transition: all var(--secs);
+}
+#projects img:hover{
+    width: 103%;
+}
+
+.posts{
+    display: flex;
+}
+ 
+
+#mealPlan{
+    padding-right: 2em;
+    border-right: 1px solid var(--border);
+}
+#weddingSite{
+    padding-left: 2em;
+}
+
+@media only screen and (max-width: 670px) {
+    .posts{
+        display: block;
+    }
+
+    #mealPlan{
+        padding: 2em 1em 2em 0;
+        border-bottom: 1px solid var(--border);
+        border-right: none;
+    }
+
+    #weddingSite{
+        padding: 2em 1em 2em 0;
+    }
+
+} 
+
+
+
+
+
+/* SKILLS */
+#skills{
+    padding: 3em 0;
+}
+
+#skills ul{
+    display: flex;
+    flex-wrap:  wrap;
+}
+
+
+#skills li{
+    padding: .5em 4em;
+    text-align: center;
+}
+.skillLogo{
+    position: relative;
+    border: solid 1px var(--border);
+    width: 60px;
+    height: 60px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+#skills img{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-45deg) translateY(-70%);
+    -webkit-transform: rotate(-45deg) translateY(-70%);
+    -moz-transform: rotate(-45deg) translateY(-70%);
+    -ms-transform: rotate(-45deg) translateY(-70%);
+    -o-transform: rotate(-45deg) translateY(-70%);
+}

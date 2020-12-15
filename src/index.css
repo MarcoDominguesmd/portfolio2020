@@ -1,0 +1,119 @@
+@import url(./styles/main.css);
+@import url(./styles/components.css);
+
+@font-face{
+  font-family: "Roboto Slab";
+  src: url(./items/fonts/RobotoSlab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+:root{
+  --bg: rgb(255, 255, 255);
+  --navbg:#f5f6f7 ;
+  --hfont: #3D4449;
+  --pfont:#788086;
+
+  --border: rgba(210, 215, 217, 0.75);
+  --blue: rgb(0, 153, 255);
+
+  --secs: 0.4s;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vw;
+  overflow: hidden;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  place-items: center;
+  text-align: left;
+  background-color: var(--bg);
+  color: var(--hfont);
+}
+
+h1{
+  font-family: "Roboto Slab";
+}
+h2{
+  padding-bottom: 1.3em;
+}
+
+h4{
+  font-family: "Roboto Slab";
+  color: var(--pfont);
+}
+p{
+  line-height: 1.5;
+  color: var(--pfont);
+}
+a{
+  text-decoration: none;
+  font-family: "Roboto Slab";
+  color: var(--hfont);
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+  color: var(--pfont);
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1;
+  margin: .4em;
+  background-color: inherit;
+  border: 1px solid var(--border);
+  color: var(--pfont);
+  padding: .6em;
+  border-radius:.5em ;
+  -webkit-border-radius:.5em ;
+  -moz-border-radius:.5em ;
+  -ms-border-radius:.5em ;
+  -o-border-radius:.5em ;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select { 
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+.fchild{
+  border-top: none;
+}
+
+
+.button{
+  color: var(--blue);
+  padding: .3em 1em;
+  border-radius: .3em;
+  -webkit-border-radius: .3em;
+  -moz-border-radius: .3em;
+  -ms-border-radius: .3em;
+  -o-border-radius: .3em;
+  border: 1px solid var(--blue);
+}
+.button:hover{
+  background-color: var(--navbg);
+} 
+
+
